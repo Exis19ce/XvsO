@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="XvsO.FieldPage">
+	<ContentPage.Resources>
+		<ResourceDictionary>
+			<Style x:Key="ButtonStyle" TargetType="Button">
+				<Setter Property="BackgroundColor" Value="White" />
+				<Setter Property="TextColor" Value="Black" />
+				<Setter Property="BorderRadius" Value="0" />
+				<Setter Property="Font" Value="36" />
+			</Style>
+		</ResourceDictionary>
+	</ContentPage.Resources>
+	<ContentPage.Content>
+		<Grid RowSpacing="5" ColumnSpacing="5" BackgroundColor="Black">
+			<Grid.RowDefinitions>
+				<RowDefinition Height="*" />
+				<RowDefinition Height="*" />
+				<RowDefinition Height="*" />
+			</Grid.RowDefinitions>
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition Width="*" />
+				<ColumnDefinition Width="*" />
+				<ColumnDefinition Width="*" />
+			</Grid.ColumnDefinitions>
+			<Button Grid.Row="0" Grid.Column="0" CommandParameter="1" Style="{DynamicResource ButtonStyle}" Command="{Binding CommandButtonClicked}" />
+			<Button Grid.Row="0" Grid.Column="1" CommandParameter="2" Style="{DynamicResource ButtonStyle}" Command="{Binding CommandButtonClicked}" />
+			<Button Grid.Row="0" Grid.Column="2" CommandParameter="3" Style="{DynamicResource ButtonStyle}" Command="{Binding CommandButtonClicked}" />
+			<Button Grid.Row="1" Grid.Column="0" CommandParameter="4" Style="{DynamicResource ButtonStyle}" Command="{Binding CommandButtonClicked}" />
+			<Button Grid.Row="1" Grid.Column="1" CommandParameter="5" Style="{DynamicResource ButtonStyle}" Command="{Binding CommandButtonClicked}" />
+			<Button Grid.Row="1" Grid.Column="2" CommandParameter="6" Style="{DynamicResource ButtonStyle}" Command="{Binding CommandButtonClicked}" />
+			<Button Grid.Row="2" Grid.Column="0" CommandParameter="7" Style="{DynamicResource ButtonStyle}" Command="{Binding CommandButtonClicked}" />
+			<Button Grid.Row="2" Grid.Column="1" CommandParameter="8" Style="{DynamicResource ButtonStyle}" Command="{Binding CommandButtonClicked}" />
+			<Button Grid.Row="2" Grid.Column="2" CommandParameter="9" Style="{DynamicResource ButtonStyle}" Command="{Binding CommandButtonClicked}" />
+		</Grid>
+	</ContentPage.Content>
+</ContentPage>
