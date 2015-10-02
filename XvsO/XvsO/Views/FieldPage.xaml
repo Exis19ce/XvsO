@@ -22,15 +22,15 @@
 				<ColumnDefinition Width="*" />
 				<ColumnDefinition Width="*" />
 			</Grid.ColumnDefinitions>
-			<Button Grid.Row="0" Grid.Column="0" CommandParameter="1" Style="{DynamicResource ButtonStyle}" Command="{Binding CommandButtonClicked}" />
-			<Button Grid.Row="0" Grid.Column="1" CommandParameter="2" Style="{DynamicResource ButtonStyle}" Command="{Binding CommandButtonClicked}" />
-			<Button Grid.Row="0" Grid.Column="2" CommandParameter="3" Style="{DynamicResource ButtonStyle}" Command="{Binding CommandButtonClicked}" />
-			<Button Grid.Row="1" Grid.Column="0" CommandParameter="4" Style="{DynamicResource ButtonStyle}" Command="{Binding CommandButtonClicked}" />
-			<Button Grid.Row="1" Grid.Column="1" CommandParameter="5" Style="{DynamicResource ButtonStyle}" Command="{Binding CommandButtonClicked}" />
-			<Button Grid.Row="1" Grid.Column="2" CommandParameter="6" Style="{DynamicResource ButtonStyle}" Command="{Binding CommandButtonClicked}" />
-			<Button Grid.Row="2" Grid.Column="0" CommandParameter="7" Style="{DynamicResource ButtonStyle}" Command="{Binding CommandButtonClicked}" />
-			<Button Grid.Row="2" Grid.Column="1" CommandParameter="8" Style="{DynamicResource ButtonStyle}" Command="{Binding CommandButtonClicked}" />
-			<Button Grid.Row="2" Grid.Column="2" CommandParameter="9" Style="{DynamicResource ButtonStyle}" Command="{Binding CommandButtonClicked}" />
+			<Button Grid.Row="0" Grid.Column="0" Clicked="OnButtonClicked" CommandParameter="1" Style="{DynamicResource ButtonStyle}" />
+			<Button Grid.Row="0" Grid.Column="1" Clicked="OnButtonClicked" CommandParameter="2" Style="{DynamicResource ButtonStyle}" />
+			<Button Grid.Row="0" Grid.Column="2" Clicked="OnButtonClicked" CommandParameter="3" Style="{DynamicResource ButtonStyle}" />
+			<Button Grid.Row="1" Grid.Column="0" Clicked="OnButtonClicked" CommandParameter="4" Style="{DynamicResource ButtonStyle}" />
+			<Button Grid.Row="1" Grid.Column="1" Clicked="OnButtonClicked" CommandParameter="5" Style="{DynamicResource ButtonStyle}" />
+			<Button Grid.Row="1" Grid.Column="2" Clicked="OnButtonClicked" CommandParameter="6" Style="{DynamicResource ButtonStyle}" />
+			<Button Grid.Row="2" Grid.Column="0" Clicked="OnButtonClicked" CommandParameter="7" Style="{DynamicResource ButtonStyle}" />
+			<Button Grid.Row="2" Grid.Column="1" Clicked="OnButtonClicked" CommandParameter="8" Style="{DynamicResource ButtonStyle}" />
+			<Button Grid.Row="2" Grid.Column="2" Clicked="OnButtonClicked" CommandParameter="9" Style="{DynamicResource ButtonStyle}" />
 		</Grid>
 	</ContentPage.Content>
 </ContentPage>
